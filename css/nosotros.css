@@ -1,0 +1,60 @@
+/*#us {
+  position: sticky;
+  width: 100%;
+  height: 100vh;
+  border: dashed orange 2px;
+}*/
+#vacia {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to top, #0c0c0c, transparent);
+  /*border: dashed rgb(0, 255, 42) 2px;*/
+}
+#vacia::before {
+  height: 150px;
+  width: 100%;
+  background: linear-gradient(to top, #0c0c0c, transparent);
+  z-index: 1000;
+  /*border: dashed 2px blue;*/
+}
+#vacia2 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  border: dashed rgb(0, 255, 42) 2px;
+}
+#vacia3 {
+  width: 100%;
+  height: 100vh;
+  border: dashed rgb(0, 255, 42) 2px;
+}
+#logoyb {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+
+  /*border: dashed magenta 2px;*/
+  z-index: 2;
+}
+#logo {
+  /*border: dashed magenta 2px;*/
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  -webkit-transform: translate(50%, -50%);
+  -moz-transform: translate(50%, -50%);
+  -ms-transform: translate(50%, -50%);
+  -o-transform: translate(50%, -50%);
+}
+#filosofia {
+  width: 100%;
+}
+#filosofia::before {
+  height: 200px;
+  width: 100%;
+  background: linear-gradient(to top, #0c0c0c, transparent);
+  z-index: 1000;
+  /*border: dashed 2px blue;*/
+}

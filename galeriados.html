@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-gray-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/splitting/dist/splitting.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/splitting/dist/splitting-cells.css"
+    />
+    <script>
+      document.documentElement.className = "js";
+    </script>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+
+    <link rel="manifest" href="img/site.webmanifest" />
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5" />
+    
+   <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="//cdn-images.mailchimp.com/embedcode/classic-071822.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    
+    <!--<link rel="stylesheet" href="css/servicios.css" />-->
+
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d"
+            }
+          }
+        }
+      };
+    </script>
+   
+    <title>Galeria | Juanito Veneno Estudio</title>
+    <link rel="stylesheet" href="estilos.css" />
+    
+    <link rel="stylesheet" href="css/cardsHover.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="sponsor/pater.css" />
+		<script>
+			document.documentElement.className = 'js';
+			var supportsCssVars = function() {
+				var s = document.createElement('style'),
+				support;
+
+				s.innerHTML = "root: { --tmp-var: bold; }";
+				document.head.appendChild(s);
+				support = !!(window.CSS && window.CSS.supports && window.CSS.supports('font-weight', 'var(--tmp-var)'));
+				s.parentNode.removeChild(s);
+				return support;
+			}
+			if (!supportsCssVars()) alert('Please view this demo in a modern browser that supports CSS Variables.')
+		</script>
+
+    
+  </head>
+  <body class="h-full demo-2 loading">
+    <div class="min-h-full " >
+      <nav class=" fixed z-30 w-full" id="navegacion">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="flex h-16 items-center justify-between">
+            <div class="flex items-center">
+              <div class="flex-shrink-0">
+                <a href="index.html">
+                <img class="h-8 w-8" src="img/logojv.png" alt="Juanito Veneno Estudio" />
+              </a>
+              </div>
+              <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a
+                    href="index.html"
+                    class="bg-gray-900  px-3 py-2 rounded-md text-sm font-medium"
+                    aria-current="page"
+                    >Inicio</a
+                  >
+
+                  <a
+                    href="nosotros.html"
+                    class="text-gray-300 hover:bg-gray-900 hover:text-lime-200 px-3 py-2 rounded-md text-sm font-medium"
+                    >Nosotros</a
+                  >
+
+                  <a
+                    href="servicios.html"
+                    class="text-gray-300 hover:bg-gray-900 hover:text-lime-200 px-3 py-2 rounded-md text-sm font-medium"
+                    >Servicios</a
+                  >
+
+                  <a
+                    href="#"
+                    class="text-gray-300 hover:bg-gray-900 hover:text-lime-200 px-3 py-2 rounded-md text-sm font-medium"
+                    >Productos</a
+                  >
+
+                  <a
+                    href="#"
+                    class="text-gray-300 hover:bg-gray-900 hover:text-lime-200 px-3 py-2 rounded-md text-sm font-medium"
+                    >Galeria</a
+                  >
+                  <a
+                    href="#"
+                    class="text-gray-300 hover:bg-gray-900 hover:text-lime-200 px-3 py-2 rounded-md text-sm font-medium"
+                    >Contacto</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="hidden md:block">
+              <div class="ml-4 flex items-center md:ml-6">
+                <!-- Profile dropdown -->
+                <div class="relative ml-3">
+                  <div>
+                    <button
+                      type="button"
+                      class="flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                      id="user-menu-button"
+                      aria-expanded="false"
+                      aria-haspopup="true"
+                    >
+                      <!--<span class="sr-only">Open user menu</span>-->
+                      <a href="https://venenews.netlify.app" target="_blank" rel="noopener noreferrer">
+                      <img
+                        class="h-8 w-8 rounded-full"
+                        src="img/venenews.png"
+                        alt=""
+                      />
+                    </a>
+                    </button>
+                  </div>
+
+                  <!--
+                  Dropdown menu, show/hide based on menu state.
+  
+                  Entering: "transition ease-out duration-100"
+                    From: "transform opacity-0 scale-95"
+                    To: "transform opacity-100 scale-100"
+                  Leaving: "transition ease-in duration-75"
+                    From: "transform opacity-100 scale-100"
+                    To: "transform opacity-0 scale-95"
+                -->
+                  <div
+                    class="absolute lg:hidden md:hidden right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                    role="menu"
+                    aria-orientation="vertical"
+                    aria-labelledby="user-menu-button"
+                    tabindex="-1"
+                  >
+                    <!-- Active: "bg-gray-100", Not Active: "" -->
+                    <a
+                      href="https://venenews.netlify.app"
+                      target="_blank"
+                      class="block px-4 py-2 text-sm text-gray-700"
+                      role="menuitem"
+                      tabindex="-1"
+                      id="user-menu-item-0"
+                      >El Blog de Juanito Veneno Estudio</a
+                    >
+
+                    <a
+                      href="https://www.facebook.com/juanitovenenoestudiodigital/"
+                      class="block px-4 py-2 text-sm text-gray-700"
+                      target="_blank"
+                      role="menuitem"
+                      tabindex="-1"
+                      id="user-menu-item-1"
+                      >Facebook</a
+                    >
+
+                    <a
+                      href="https://www.youtube.com/@JuanitoVenenoEstudio/"
+                      class="block px-4 py-2 text-sm text-gray-700"
+                      target="_blank"
+                      role="menuitem"
+                      tabindex="-1"
+                      id="user-menu-item-2"
+                      >Youtube</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="-mr-2 flex md:hidden " id="mobile-menu">
+              <!-- Mobile menu button -->
+              <button
+                type="button"
+                class="inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+                
+                
+              >
+                <span class="sr-only " >Open main menu</span>
+                <!--
+                Heroicon name: outline/bars-3
+  
+                Menu open: "hidden", Menu closed: "block"
+              -->
+                <svg
+                  class="block h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+                <!--
+                Heroicon name: outline/x-mark
+  
+                Menu open: "block", Menu closed: "hidden"
+              -->
+                <svg
+                  class="hidden h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="md:hidden" >
+          <div class="space-y-1 px-2 pt-2 pb-3 sm:px-3 toggle">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a
+              href="index.html"
+              class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+              aria-current="page"
+              >Inicio</a
+            >
+
+            <a
+              href="nosotros.html"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >Nosotros</a
+            >
+
+            <a
+              href="servicios.html"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >Servicios</a
+            >
+
+            <a
+              href="#0"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >Productos</a
+            >
+
+            <a
+              href="#0"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >Galeria
+            </a>
+            <a
+              href="#0"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >Contacto 
+            </a>
+          </div>
+          <div class="border-t border-gray-700 pt-4 pb-3" onclick="toggleMenu()">
+            <div class="flex items-center px-5">
+              <div class="flex-shrink-0">
+            <a href="http://venenews.netlify.app" target="_blank" rel="noopener noreferrer">
+                <img
+                  class="h-10 w-10 rounded-full"
+                  src="img/venenews.png"
+                  alt=""
+                />
+              </div>
+            </a>
+              <div class="ml-3">
+                <div class="text-base font-medium leading-none text-white">
+                  Blog De Juanito Veneno Estudio
+                </div>
+                <div class="text-sm font-medium leading-none text-gray-400">
+                  dannyveneno@proton.me
+                </div>
+              </div>
+              
+            </div>
+            <div class="mt-3 space-y-1 px-2">
+              <a
+                href="https://www.youtube.com/@JuanitoVenenoEstudio/"
+                class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white"
+                >Youtube</a
+              >
+
+              <a
+                href="https://www.instagram.com/juanitovenenoestudio/"
+                target="_blank"
+                class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white"
+                >Instagram</a
+              >
+
+              <a
+                href="https://www.facebook.com/juanitovenenoestudiodigital/"
+                target="_blank"
+                class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white"
+                >Meta</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+<!--        cuerpo-->
+
+<!--seccion dos-->
+<svg class="hidden">
+    <symbol id="icon-arrow" viewBox="0 0 24 24">
+        <title>arrow</title>
+        <polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
+    </symbol>
+    <symbol id="icon-drop" viewBox="0 0 24 24">
+        <title>drop</title>
+        <path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"/><path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"/>
+    </symbol>
+    <symbol id="shape-demo" viewBox="0 0 200 100">
+        <title>shape demo</title>
+        <path d="M 6.144,74.1 C 20.4,107.4 70.13,94.33 94.22,95.74 121.3,97.41 130.8,101.1 154.7,99.38 178.6,97.72 201.9,78.95 199.4,46.86 197.1,14.96 174.9,4.781 161.4,1.827 147.9,-1.128 119.8,8.284 105.6,8.766 85.34,9.449 81.91,7.628 51.08,2.334 17.26,-3.482 -8.105,40.84 6.144,74.1 Z" />
+    </symbol>
+</svg>
+<main>
+    <div class="morph-wrap" style="z-index: -1;">
+        <svg class="morph" width="1400" height="770" viewBox="0 0 1400 770">
+            <path d="M 262.9,252.2 C 210.1,338.2 212.6,487.6 288.8,553.9 372.2,626.5 511.2,517.8 620.3,536.3 750.6,558.4 860.3,723 987.3,686.5 1089,657.3 1168,534.7 1173,429.2 1178,313.7 1096,189.1 995.1,130.7 852.1,47.07 658.8,78.95 498.1,119.2 410.7,141.1 322.6,154.8 262.9,252.2 Z"/>
+        </svg>
+    </div>
+    <!---->
+    <div class="content content--fixed">
+        <header class="codrops-header">
+            <!--<div class="codrops-links">
+                <svg class="decoshape" viewBox="0 0 200 100" width="100%" height="100%" preserveAspectRatio="none">
+                    <path d="M 10.45,74.41 C 39.4,110.8 72.59,67.27 95.98,68.68 122.3,70.35 131.5,101.4 154.7,99.69 177.9,98.03 200.5,79.26 198.1,47.17 195.9,15.27 174.6,-0.3279 151.8,0.9941 128.6,2.581 126,16.86 107,22.76 88.26,28.67 88.87,12.36 60.37,1.787 31.79,-8.877 -18.61,37.92 10.45,74.41 Z" />
+                </svg>
+                <a class="codrops-icon codrops-icon--prev" href="https://tympanus.net/Development/FolderPreviewIdeas/" title="Previous Demo"><svg class="icon icon--arrow"><use xlink:href="#icon-arrow"></use></svg></a>
+                <a class="codrops-icon codrops-icon--drop" href="https://tympanus.net/codrops/?p=31190" title="Back to the article"><svg class="icon icon--drop"><use xlink:href="#icon-drop"></use></svg></a>
+            </div>
+            <h1 class="codrops-header__title">Morphing Background Shapes</h1>-->
+        </header>
+        <nav class="demos">
+            <a class="demo" href="nosotros.html"><svg class="decoshape" preserveAspectRatio="none"><use xlink:href="#shape-demo"></use></svg>Nosotros</a>
+
+            <a class="demo demo--current" href="galeria.html"><svg class="decoshape"></svg>Galeria</a>
+
+            <a class="demo demo--current" href="galeriados.html"><svg class="decoshape"><use xlink:href="#shape-demo"></use></svg>Galeria 2</a>
+
+            <a class="demo demo--current" href="galeriatres.html"><svg class="decoshape"></svg>Galeria 3</a>
+
+            <a class="demo" href="servicios.html"><svg class="decoshape"><use xlink:href="#shape-demo"></use></svg>Servicios</a>
+
+            <a class="demo" href="contacto.html"><svg class="decoshape"><use xlink:href="#shape-demo"></use></svg>Contacto</a>
+
+            <a class="demo" href="https://open-ai-chat-jv.vercel.app/" target="_blank"><svg class="decoshape"><use xlink:href="#shape-demo"></use></svg>Preguntale al chatGTP</a>
+        </nav>
+        <a class="pater" href="https://danyveneno.github.io/yehiiBhiiEstudio/" target="_blank">
+        <svg class="pater__deco" width="300" height="240" viewBox="0 0 1000 800">
+                <path d="M27.4,171.8C73,42.9,128.6,1,128.6,1s0,0,0,0c58.5,0,368.3,0.3,873.2,0.8c38.5,211,42.1,373.5,38.9,476.7c-2.5,80.3-10.6,174.9-76.7,247.8c-15.1,16.6-37.4,41.2-72.8,53.9c-92.4,33.1-173-50.8-283.9-99.4c-224.3-98.4-334.9,51.4-472.2-45.6C-6.3,535.2-14.5,290.6,27.4,171.8z"/>
+            </svg>
+            <img class="pater__img" src="sponsor/logo-jv.png" alt="HelloSign API" />
+            <h4 class="pater__title">Disrupt yourself ! or Not</h4>
+            <p class="pater__desc">Aún ... La Mejor Estrategia Es Hacerlo.</p>
+        </a>
+        <div class="deco deco--title">YEHIIBHII 2023</div>
+    </div>
+    <div class="content-wrap">
+        <div class="content content--layout content--layout-1">
+            <img class="content__img" src="img/9.png" alt="Some image" />
+            <h3 class="content__title">webpack 2023</h3>
+            <p class="content__author">Promo 2023</p>
+            <p class="content__desc">Este sitio web esta desarrollado con HTML /CSS / jS / Bootstrap.</p>
+            <a href="https://danyveneno.github.io/laFruteria/" class="content__link" target="_blank">Navega en el sitio</a>
+        </div>
+    </div>
+    <div class="content-wrap">
+        <div class="content content--layout content--layout-2">
+            <img class="content__img" src="img/11.png" alt="Some image" />
+            <h3 class="content__title">Administrador de Pacientes.</h3>
+            <p class="content__author">YEHIIBHII 2023</p>
+            <p class="content__desc">Esta app esta lista para integrarse a tu sitio web desarrollada con React.JS / TailwindCss.</p>
+            <a href="https://citasdentista.netlify.app/" class="content__link" target="_blank">Navegar en la App</a>
+        </div>
+    </div>
+    <div class="content-wrap">
+        <div class="content content--layout content--layout-3">
+            <img class="content__img" src="img/13.png" alt="Some image" />
+            <h3 class="content__title">Administrador de Clientes</h3>
+            <p class="content__author">YEHIIBHII 2023</p>
+            <p class="content__desc">Esta app esta lista para integrarse a tu sitio web desarrollada con React.JS/CSS.</p>
+            <a href="https://elated-pasteur-7f16f8.netlify.app/" class="content__link" target="_blank">Navegar en la App</a>
+        </div>
+    </div>
+    <div class="content-wrap">
+        <div class="content content--layout content--layout-4">
+            <img class="content__img" src="img/17.png" alt="Some image" />
+            <h3 class="content__title">Buscador de letras de canciones</h3>
+            <p class="content__author">YEHIIBHII 2023</p>
+            <p class="content__desc">Este proyecto esta desarrollado React.JS / TailwindCss</p>
+            <a href="https://yehiibhiilirycs.netlify.app/" class="content__link" target="_blank">Navegar en la App</a>
+        </div>
+    </div>
+    <div class="content-wrap">
+        <div class="content content--layout content--layout-1">
+            <img class="content__img" src="img/6.png" alt="Some image" />
+            <h3 class="content__title">Administrador de Presupuesto</h3>
+            <p class="content__author">YEHIIBHII 2023</p>
+            <p class="content__desc">Este proyecto esta desarrollado React.JS / CSS</p>
+            <a href="https://zen-boyd-b57a73.netlify.app/" class="content__link" target="_blank">Navegar en la App</a>
+        </div>
+    </div>
+    <!-- Related demos -->
+    <section class="content content--related">
+        <!--<p class="content__info">If you enjoyed this demo you might also like:</p>
+        <a class="content__related-item" href="https://tympanus.net/Development/ElasticSVGElements/">
+            <img class="content__related-img" src="img/related/ItemRevealer.jpg">
+            <h3 class="content__related-title">Elastic SVG Elements</h3>
+        </a>
+        <a class="content__related-item" href="https://tympanus.net/Development/ItemRevealer/">
+            <img class="content__related-img" src="img/related/ElasticSVGElements.jpg">
+            <h3 class="content__related-title">Item Revealer</h3>
+        </a>-->
+    </section>
+</main>
+<div class="bg-gray-900 z-auto" id="antepe">
+    <div class="mx-auto grid max-w-2xl grid-cols-1 items-center gap-y-16 gap-x-8 py-24 px-4 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
+      <div >
+        
+          
+    
+        
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Diseño & Desarrollo Web</h2>
+        <p class="mt-4 text-gray-900 text-2xl font-bold">Los servicios que ofrecemos estan constituidos apartir de un Ecosistema Digital Comercial. Que tiene como finalidad innovación continua en la forma en que integras u ofreces tus productos y/o Servicios.</p>
+  
+        <dl class="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
+          <div class="border-t border-gray-900 pt-4">
+            <dt class="font-medium text-gray-900">UI/UX</dt>
+            <dd class="mt-2 text-sm text-gray-900">Es una disciplina de diseño centrada en la experiencia del usuario. Está diseñado para mejorar la satisfacción del usuario al interactuar con un producto o servicio. Esto se logra mediante el uso de principios de diseño intuitivos, como la simplicidad, la facilidad de uso y la estética. </dd>
+          </div>
+  
+          <div class="border-t border-gray-900 pt-4">
+            <dt class="font-medium text-gray-900">Design thinking</dt>
+            <dd class="mt-2 text-sm text-gray-900">Es una metodología de innovación centrada en el usuario que se utiliza para abordar problemas complejos y desarrollar soluciones innovadoras. Esta metodología se basa en la empatía hacia el usuario, la experimentación y la colaboración entre los miembros del equipo.</dd>
+          </div>
+  
+          <div class="border-t border-gray-900 pt-4">
+            <dt class="font-medium text-gray-900">Atomic Design</dt>
+            <dd class="mt-2 text-sm text-gray-900">Es una metodología de diseño creada por Brad Frost para ayudar a los diseñadores a crear interfaces de usuario consistentes y escalables. Esta metodología se basa en la idea de que todos los elementos de una interfaz de usuario se pueden dividir en partes más pequeñas, llamadas átomos. Estos átomos se combinan para formar moléculas, que a su vez se combinan para formar organismos, que luego se combinan para formar plantillas y finalmente páginas.</dd>
+          </div>
+  
+          <div class="border-t border-gray-900 pt-4">
+            <dt class="font-medium text-gray-900">Metodología Agile</dt>
+            <dd class="mt-2 text-sm text-gray-900"> Scrum es una metodología ágil de desarrollo de software que se enfoca en entregar productos de calidad a través de iteraciones cortas y regulares. Esta metodología se basa en la colaboración entre equipos auto-organizados para lograr los objetivos establecidos. El objetivo principal de Scrum es mejorar la calidad del producto, aumentar la velocidad de entrega y reducir los costos. Esto se logra mediante el uso de reuniones cortas, llamadas "sprints", para planificar, diseñar, desarrollar y probar el producto. Estas reuniones permiten al equipo trabajar juntos para identificar problemas y solucionarlos rápidamente. Además, Scrum también promueve el trabajo colaborativo entre los miembros del equipo para mejorar la comunicación y la coordinación.</dd>
+          </div>
+  
+          <div class="border-t border-gray-900 pt-4">
+            <dt class="font-medium text-gray-900">Responsive Design</dt>
+            <dd class="mt-2 text-sm text-gray-900">Responsive Design es una técnica de diseño web que permite que un sitio web se adapte a diferentes tamaños de pantalla. Esto significa que el contenido se ajusta automáticamente para proporcionar la mejor experiencia de usuario en cualquier dispositivo, desde teléfonos inteligentes hasta computadoras de escritorio. Esto se logra mediante el uso de diseños flexibles, imágenes y medios adaptables y hojas de estilo en cascada (CSS).</dd>
+          </div>
+  
+          <div class="border-t border-gray-900 pt-4">
+            <dt class="font-medium text-gray-900">Arquitectura de Software</dt>
+            <dd class="mt-2 text-sm text-gray-900">La arquitectura de software es una disciplina que se encarga de la estructuración y organización de los componentes de un sistema informático. Estos componentes pueden ser hardware, software, datos, procesos y personas. La arquitectura de software define la estructura general del sistema, así como los principios básicos que rigen su diseño y desarrollo. Esta disciplina se encarga también de definir los requisitos funcionales y no funcionales del sistema, así como las interfaces entre los diferentes componentes.</dd>
+          </div>
+          <div class="border-t border-gray-900 pt-4">
+            <dt class="font-medium text-gray-900">Cultura Web</dt>
+            <div class="mt-2 text-sm text-gray-900">La cultura web dentro de una empresa es el conjunto de prácticas,normas y valores que
+            se promueven para aprovechar al máximo el
+            uso delatecnologíaweb Estoincluye la adopción de herramientas digitales,la creación de contenido en línea,el uso deredes sociales y la optimización para motores debúsqueda.Esta cultura también abarca cómo los empleados interactúan con los clientes y compañeros  através del uso de la tecnología web.La cultura web puede ayudar a una empresa a mejorar su presencia en línea,aumentar su alcance y mejorar su productividad.</div>
+          </div>
+        </dl>
+      </div>
+      <div class="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+        <img src="img/image265.jpg" alt="Walnut card tray with white powder coated steel divider and 3 punchout holes." class="rounded-lg bg-gray-100">
+        <img src="img/image277.jpg" alt="Top down view of walnut card tray with embedded magnets and card groove." class="rounded-lg bg-gray-100">
+        <img src="img/image289.jpg" alt="Side of walnut card tray with card groove and recessed card area." class="rounded-lg bg-gray-100">
+        <img src="img/image301-0.jpg" alt="Walnut card tray filled with cards and card angled in dedicated groove." class="rounded-lg bg-gray-100">
+      </div>
+    </div>
+  </div>
+<!--
+This example requires some changes to your config:
+
+```
+// tailwind.config.js
+module.exports = {
+// ...
+theme: {
+  extend: {
+    gridTemplateRows: {
+      '[auto,auto,1fr]': 'auto auto 1fr',
+    },
+  },
+},
+plugins: [
+  // ...
+  require('@tailwindcss/aspect-ratio'),
+],
+}
+```
+-->
+<div class="bg-white" id="menosFooter">
+<div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
+<div class="pt-6">
+<nav aria-label="Breadcrumb">
+  <ol role="list" class="mx-auto flex max-w-2xl items-center space-x-2 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+    <li>
+      <div class="flex items-center">
+        <a href="#" class="mr-2 text-sm font-medium text-gray-100">UI/UX</a>
+        <svg width="16" height="20" viewBox="0 0 16 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="h-5 w-4 text-gray-100">
+          <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
+        </svg>
+      </div>
+    </li>
+
+    <li>
+      <div class="flex items-center">
+        <a href="#" class="mr-2 text-sm font-medium text-gray-100">WebDev</a>
+        <svg width="16" height="20" viewBox="0 0 16 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="h-5 w-4 text-gray-100">
+          <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
+        </svg>
+      </div>
+    </li>
+
+    <li class="text-sm">
+      <a href="#" aria-current="page" class="font-medium text-gray-100 hover:text-gray-600">Ecosistema Digital</a>
+    </li>
+  </ol>
+</nav>
+
+<!-- Image gallery -->
+<div class="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">
+  <div class="aspect-w-3 aspect-h-4 hidden overflow-hidden rounded-lg lg:block">
+    <img src="img/image289.jpg" alt="Two each of gray, white, and black shirts laying flat." class="h-full w-full object-cover object-center">
+  </div>
+  <div class="hidden lg:grid lg:grid-cols-1 lg:gap-y-8">
+    <div class="aspect-w-3 aspect-h-2 overflow-hidden rounded-lg">
+      <img src="img/image277.jpg" alt="Model wearing plain black basic tee." class="h-full w-full object-cover object-center">
+    </div>
+    <div class="aspect-w-3 aspect-h-2 overflow-hidden rounded-lg">
+      <img src="img/image265.jpg" alt="Model wearing plain gray basic tee." class="h-full w-full object-cover object-center">
+    </div>
+  </div>
+  <div class="aspect-w-4 aspect-h-5 sm:overflow-hidden sm:rounded-lg lg:aspect-w-3 lg:aspect-h-4">
+    <img src="img/astronauta22.jpg" alt="Model wearing plain white basic tee." class="h-full w-full object-cover object-center">
+  </div>
+</div>
+
+<!-- Product info -->
+<div class="mx-auto max-w-2xl px-4 pt-10 pb-16 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8 lg:px-8 lg:pt-16 lg:pb-24">
+  <div class="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
+    <h1 class="text-2xl font-bold tracking-tight text-gray-100 sm:text-3xl">Suscribete Newsletter</h1>
+  </div>
+
+  <!-- Options -->
+  <div class="mt-4 lg:row-span-3 lg:mt-0">
+    <h2 class="sr-only">Redes Sociales</h2>
+    <p class="text-3xl tracking-tight text-gray-100">Redes Sociales</p>
+
+    <!-- Reviews -->
+    <div class="mt-6">
+      <h3 class="sr-only">Dale una visita probablemente encuentres más información</h3>
+      <div class="flex items-center">
+        <div class="flex items-center">
+          <!--
+            Heroicon name: mini/star
+
+            Active: "text-gray-900", Default: "text-gray-200"
+          -->
+          <!--<svg class="text-gray-900 h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+          </svg>
+
+          <!-- Heroicon name: mini/star 
+          <svg class="text-gray-900 h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+          </svg>
+
+          <!-- Heroicon name: mini/star 
+          <svg class="text-gray-900 h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+          </svg>
+
+          <!-- Heroicon name: mini/star 
+          <svg class="text-gray-900 h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+          </svg>
+
+          <!-- Heroicon name: mini/star 
+          <svg class="text-gray-200 h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+          </svg>-->
+        </div>
+        <!--<p class="sr-only">4 out of 5 stars</p>-->
+        <a href="#0" class="ml-3 text-sm font-medium text-lime-300 hover:text-indigo-500">Dale una visita probablemente encuentres más información</a>
+      </div>
+    </div>
+
+    <form class="mt-10 text-gray-100">
+       Donde contactarnos 
+      <div>
+        <h3 class="text-sm font-medium text-gray-100">Escoje el que prefieras</h3>
+
+        <!--<fieldset class="mt-4">
+          <legend class="sr-only">Choose a color</legend>
+          <div class="flex items-center space-x-3">
+            <!--
+              Active and Checked: "ring ring-offset-1"
+              Not Active and Checked: "ring-2"
+            
+            <label class="-m-0.5 relative p-0.5 rounded-full flex items-center justify-center cursor-pointer focus:outline-none ring-gray-400">
+              <input type="radio" name="color-choice" value="White" class="sr-only" aria-labelledby="color-choice-0-label">
+              <span id="color-choice-0-label" class="sr-only"> White </span>
+              <span aria-hidden="true" class="h-8 w-8 bg-white border border-black border-opacity-10 rounded-full"></span>
+            </label>
+
+            <!--
+              Active and Checked: "ring ring-offset-1"
+              Not Active and Checked: "ring-2"
+            
+            <label class="-m-0.5 relative p-0.5 rounded-full flex items-center justify-center cursor-pointer focus:outline-none ring-gray-400">
+              <input type="radio" name="color-choice" value="Gray" class="sr-only" aria-labelledby="color-choice-1-label">
+              <span id="color-choice-1-label" class="sr-only"> Gray </span>
+              <span aria-hidden="true" class="h-8 w-8 bg-gray-200 border border-black border-opacity-10 rounded-full"></span>
+            </label>
+
+            <!--
+              Active and Checked: "ring ring-offset-1"
+              Not Active and Checked: "ring-2"
+            
+            <label class="-m-0.5 relative p-0.5 rounded-full flex items-center justify-center cursor-pointer focus:outline-none ring-gray-900">
+              <input type="radio" name="color-choice" value="Black" class="sr-only" aria-labelledby="color-choice-2-label">
+              <span id="color-choice-2-label" class="sr-only"> Black </span>
+              <span aria-hidden="true" class="h-8 w-8 bg-gray-900 border border-black border-opacity-10 rounded-full"></span>
+            </label>
+          </div>
+        </fieldset>-->
+      </div>
+
+      <!-- Sizes -->
+      <div class="mt-10">
+        <div class="flex items-center justify-between">
+          <h3 class="text-sm font-medium text-gray-100">Activa las notificaciónes</h3>
+          <a href="#" class="text-sm font-medium text-lime-300 hover:text-gray-200">Siguenos</a>
+        </div>
+
+        <fieldset class="mt-4">
+          <legend class="sr-only">Escoge una red</legend>
+          <div class="grid grid-cols-4 gap-4 sm:grid-cols-8 lg:grid-cols-3">
+            <!-- Active: "ring-2 ring-indigo-500" 
+            <label class="group relative border rounded-md py-4 px-4 flex items-center justify-center text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6 bg-gray-50 text-gray-200 ">
+              <input type="radio" name="size-choice" value="XXS"  class="sr-only" aria-labelledby="size-choice-0-label">
+              <span id="size-choice-0-label">GitHub</span>
+
+              <span aria-hidden="true" class="pointer-events-none absolute -inset-px rounded-md border-2 border-gray-200">
+                <svg class="absolute inset-0 h-full w-full stroke-2 text-gray-200" viewBox="0 0 100 100" preserveAspectRatio="none" stroke="currentColor">
+                  <line x1="0" y1="100" x2="100" y2="0" vector-effect="non-scaling-stroke" />
+                </svg>
+              </span>
+            </label>-->
+
+            <!-- Active: "ring-2 ring-indigo-500" -->
+            <label class="group relative border rounded-md py-3 px-4 flex items-center justify-center text-sm font-bold uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6 bg-white shadow-sm text-gray-900 cursor-pointer">
+             <a href="https://www.tiktok.com/@dannyv3n3no" target="_blank" rel="noopener noreferrer"> <input type="radio" name="size-choice" value="XS" class="sr-only" aria-labelledby="size-choice-1-label">
+              <span id="size-choice-1-label" class="text-gray-900">TikTok</span></a>
+
+              <!--
+                Active: "border", Not Active: "border-2"
+                Checked: "border-indigo-500", Not Checked: "border-transparent"
+              -->
+              <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+            </label>
+
+            <!-- Active: "ring-2 ring-indigo-500" -->
+           <a href="https://twitter.com/VenenoDigital" target="_blank" rel="noopener noreferrer"> <label class="group relative border rounded-md py-3 px-4 flex items-center justify-center text-sm font-bold uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6 bg-white shadow-sm text-gray-900 cursor-pointer">
+              <input type="radio" name="size-choice" value="S" class="sr-only" aria-labelledby="size-choice-2-label">
+              <span id="size-choice-2-label">Twitter</span>
+            </a>
+
+              <!--
+                Active: "border", Not Active: "border-2"
+                Checked: "border-indigo-500", Not Checked: "border-transparent"
+              -->
+              <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+            </label>
+
+            <!-- Active: "ring-2 ring-indigo-500" -->
+           <a href="https://www.twitch.tv/juanitovenenoestudio" target="_blank" rel="noopener noreferrer"> <label class="group relative border rounded-md py-3 px-4 flex items-center justify-center text-sm font-bold uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6 bg-white shadow-sm text-gray-900 cursor-pointer">
+              <input type="radio" name="size-choice" value="M" class="sr-only" aria-labelledby="size-choice-3-label">
+              <span id="size-choice-3-label">Twitch</span>
+            </a>
+
+              <!--
+                Active: "border", Not Active: "border-2"
+                Checked: "border-indigo-500", Not Checked: "border-transparent"
+              -->
+              <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+            </label>
+
+            <!-- Active: "ring-2 ring-indigo-500" -->
+           <a href="https://www.facebook.com/juanitovenenoestudiodigital" target="_blank" rel="noopener noreferrer"> <label class="group relative border rounded-md py-3 px-4 flex items-center justify-center text-sm font-bold uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6 bg-white shadow-sm text-gray-900 cursor-pointer">
+              <input type="radio" name="size-choice" value="L" class="sr-only" aria-labelledby="size-choice-4-label">
+              <span id="size-choice-4-label">Meta</span>
+            </a>
+
+              <!--
+                Active: "border", Not Active: "border-2"
+                Checked: "border-indigo-500", Not Checked: "border-transparent"
+              -->
+              <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+            </label>
+
+            <!-- Active: "ring-2 ring-indigo-500" -->
+          <a href="https://www.instagram.com/juanitovenenoestudio/" target="_blank" rel="noopener noreferrer"> <label class="group relative border rounded-md py-3 px-4 flex items-center justify-center text-sm font-bold uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6 bg-white shadow-sm text-gray-900 cursor-pointer">
+              <input type="radio" name="size-choice" value="XL" class="sr-only" aria-labelledby="size-choice-5-label">
+              <span id="size-choice-5-label">Instagram</span>
+            </a> 
+              <!--
+                Active: "border", Not Active: "border-2"
+                Checked: "border-indigo-500", Not Checked: "border-transparent"
+              -->
+              <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+            </label>
+
+            <!-- Active: "ring-2 ring-indigo-500" -->
+         <a href="https://www.youtube.com/channel/UC8UhdMAKJX56O2PY8kzBIlw" target="_blank" rel="noopener noreferrer">   <label class="group relative border rounded-md py-3 px-4 flex items-center justify-center text-sm font-bold uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6 bg-white shadow-sm text-gray-900 cursor-pointer">
+              <input type="radio" name="size-choice" value="2XL" class="sr-only" aria-labelledby="size-choice-6-label">
+              <span id="size-choice-6-label">Youtube</span>
+            </a>
+              <!--
+                Active: "border", Not Active: "border-2"
+                Checked: "border-indigo-500", Not Checked: "border-transparent"
+              -->
+              <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+            </label>
+
+            <!-- Active: "ring-2 ring-indigo-500" -->
+        <a href="https://www.pinterest.com.mx/juanitovenenoestudio/" target="_blank" rel="noopener noreferrer">    <label class="group relative border rounded-md py-3 px-4 flex items-center justify-center text-sm font-bold uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6 bg-white shadow-sm text-gray-900 cursor-pointer">
+              <input type="radio" name="size-choice" value="3XL" class="sr-only" aria-labelledby="size-choice-7-label">
+              <span id="size-choice-7-label">Pinterest</span>
+            </a>
+              <!--
+                Active: "border", Not Active: "border-2"
+                Checked: "border-indigo-500", Not Checked: "border-transparent"
+              -->
+              <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+            </label>
+          </div>
+        </fieldset>
+      </div>
+      <a
+      href="https://wa.me/5610731990?text=Hola%20me%20interesan%20tus%20servicios%20de%20desarrollo%20web"
+      type="button"
+      class="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-gray-800 py-3 px-8 text-base font-bold text-lime-200 hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+      target="_blank"
+    >
+      <Icon pack="mdi" name="whatsapp" class="h-8" />
+      <span>WhatsApp</span>
+    </a>
+      <!--<button type="submit" class="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 py-3 px-8 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"> WhatsApp</button>-->
+    </form>
+  </div>
+
+  <div class="py-10 lg:col-span-2 lg:col-start-1 lg:border-r lg:border-gray-200 lg:pt-6 lg:pb-16 lg:pr-8">
+    <!-- Description and details -->
+    <d class="container">
+      <h3 class="sr-only">Descripción</h3>
+
+      <div class="space-y-6">
+        <p class="text-base text-gray-900" id="beneficios"> 1. Mantenerse al día con las últimas noticias y actualizaciones: Los usuarios pueden recibir información sobre los últimos productos, servicios y ofertas especiales directamente en su bandeja de entrada.
+          <br>
+
+          2. Ofertas exclusivas: Muchos sitios web ofrecen descuentos exclusivos para suscriptores de newsletters, lo que les permite ahorrar dinero en sus compras.
+          <br>
+          3. Acceso a contenido exclusivo: Algunos sitios web ofrecen contenido exclusivo solo para suscriptores de newsletters, como artículos, videos y descargas gratuitas.
+          <br>
+          4. Participar en promociones y sorteos: Muchas veces los usuarios pueden participar en promociones y sorteos solo si están suscritos a la newsletter del sitio web. Esto les da la oportunidad de ganar premios interesantes.
+          <br>
+        </p>
+        </div>
+      
+    <!-- Begin Mailchimp Signup Form -->
+
+
+<div id="mc_embed_signup">
+<form
+  action="https://juanitovenenoed.us20.list-manage.com/subscribe/post?u=058575c106ee9d9772c7ebc9d&id=d78136f263&f_id=00ce4ee6f0"
+  method="post"
+  id="mc-embedded-subscribe-form"
+  name="mc-embedded-subscribe-form"
+  class="validate text-white"
+  target="_blank"
+  novalidate
+>
+  <div id="mc_embed_signup_scroll">
+    <h2 id="titulo">Información por E-Mail </h2>
+    <div class="indicates-required">
+      <span class="asterisk" id="asterisko">*</span>Requeridos
+    </div>
+    <div class="mc-field-group">
+      <label for="mce-FNAME">Tu Nombre <span class="asterisk">*</span>
+        
+      </label>
+      <br>
+      <input
+        type="text"
+        value=""
+        placeholder="Escribe tu nombre y apellido"
+        name="FNAME"
+        class="required bg-black opacity-30"
+        id="mce-FNAME"
+        required
+      />
+      <span id="mce-FNAME-HELPERTEXT" class="helper_text"></span>
+    </div>
+    <div class="mc-field-group">
+      <label for="mce-EMAIL"
+        >Tu Correo <span class="asterisk">*</span>
+      </label>
+      <br>
+      <input
+        type="email"
+        placeholder="Escribe tu correo"
+        value=""
+        name="EMAIL"
+        class="required email bg-black opacity-30"
+        id="mce-EMAIL"
+        required
+      />
+      <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+    </div>
+    <div hidden="true">
+      <input type="hidden" name="tags" value="3423257,3423253" />
+    </div>
+    <div id="mce-responses" class="clear foot">
+      <div class="response" id="mce-error-response" style="display:none">
+      </div>
+      <div
+        class="response"
+        id="mce-success-response"
+        style="display:none"
+      >
+      </div>
+    </div>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+      <input
+        type="text"
+        name="b_058575c106ee9d9772c7ebc9d_d78136f263"
+        tabindex="-1"
+        value=""
+      />
+    </div>
+    <div class="optionalParent">
+      <div class="clear foot">
+        <input
+          type="submit"
+          value="Subscribirme"
+          name="subscribe"
+          id="mc-embedded-subscribe"
+          class="button"
+          
+        />
+        <p class="brandingLogo">
+          <a
+            href="http://eepurl.com/iiQZPD"
+            title="Mailchimp - email marketing made easy and fun"
+            ><img
+              src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_light_dtp.svg"
+            />
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</form>
+</div>
+<script
+type="text/javascript"
+src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+></script><script type="text/javascript">
+(function ($) {
+  window.fnames = new Array();
+  window.ftypes = new Array();
+  fnames[0] = "EMAIL";
+  ftypes[0] = "email";
+  fnames[1] = "FNAME";
+  ftypes[1] = "text";
+  fnames[2] = "LNAME";
+  ftypes[2] = "text";
+  fnames[3] = "ADDRESS";
+  ftypes[3] = "address";
+  fnames[4] = "PHONE";
+  ftypes[4] = "phone";
+  fnames[5] = "BIRTHDAY";
+  ftypes[5] = "birthday";
+})(jQuery);
+var $mcj = jQuery.noConflict(true);
+</script>
+
+<!--End mc_embed_signup-->
+</div>
+
+    <div class="mt-10">
+      <h3 class="text-sm font-medium text-gray-100">Datos sobresalientes</h3>
+
+      <div class="mt-4">
+        <ul role="list" class="list-disc space-y-2 pl-4 text-sm">
+          <li class="text-gray-100"><span class="text-gray-200">Identidad Comercial</span></li>
+
+          <li class="text-gray-100"><span class="text-gray-200">Personalización</span></li>
+
+          <li class="text-gray-100"><span class="text-gray-200">Integración web</span></li>
+
+          <li class="text-gray-100"><span class="text-gray-200">Consultoria para latransformación</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-10">
+      <dialog id="privacidad">
+        <h1 id="titleAviso">Aviso De Privacidad</h1>
+        <hr>
+        
+        <br>
+    <p id="avisoDePrivacidad">
+      AVISO DE PRIVACIDAD
+
+Daniel Vallejo Chimal , mejor conocido como Juanito Veneno Estudio Digital , con domicilio en calle Cerrada de las colonias, colonia Las Colonias, ciudad Estado De México, municipio o delegación Atizapán De Zaragoza, c.p. 52953, en la entidad de Estado De México, país México , y portal de internet https://juanitovenenoestudio.netlify.app/ , es el responsable del uso y protección de sus datos personales, y al respecto le informamos lo siguiente:
+<br>
+¿Para qué fines utilizaremos sus datos personales?
+<br>
+Los datos personales que recabamos de usted, los utilizaremos para las siguientes finalidades que son necesarias para el servicio que solicita:
+<br>
+De manera adicional, utilizaremos su información personal para las siguientes finalidades secundarias que no son necesarias para el servicio solicitado, pero que nos permiten y facilitan brindarle una mejor atención:
+Marketing Digital
+Mercadotecnia o publicitaria
+Prospección comercial
+En caso de que no desee que sus datos personales se utilicen para estos fines secundarios, indíquelo a continuación:
+<br>
+No consiento que mis datos personales se utilicen para los siguientes fines:
+<br>
+[ + ] Marketing Digital
+[ + ] Mercadotecnia o publicitaria
+[ + ] Prospección comercial
+<br>
+La negativa para el uso de sus datos personales para estas finalidades no podrá ser un motivo para que le neguemos los servicios y productos que solicita o contrata con nosotros.
+<br>
+¿Qué datos personales utilizaremos para estos fines?
+<br>
+Para llevar a cabo las finalidades descritas en el presente aviso de privacidad, utilizaremos los siguientes datos personales:
+Nombre
+Correo electrónico
+<br>
+¿Con quién compartimos su información personal y para qué fines?
+<br>
+Le informamos que sus datos personales son compartidos dentro del país con las siguientes personas, empresas, organizaciones o autoridades distintas a nosotros, para los siguientes fines:
+<br>
+Destinatario de los datos personales	Finalidad	Requiere del consentimiento
+hubspot	administrar	Sí
+mailchimp	marketing por correo	Sí
+DanielVallejo	Creación de campañas de marketing	Sí
+
+<br>
+
+¿Cómo puede acceder, rectificar o cancelar sus datos personales, u oponerse a su uso?
+<br>
+Usted tiene derecho a conocer qué datos personales tenemos de usted, para qué los utilizamos y las condiciones del uso que les damos (Acceso). Asimismo, es su derecho solicitar la corrección de su información personal en caso de que esté desactualizada, sea inexacta o incompleta (Rectificación); que la eliminemos de nuestros registros o bases de datos cuando considere que la misma no está siendo utilizada adecuadamente (Cancelación); así como oponerse al uso de sus datos personales para fines específicos (Oposición). Estos derechos se conocen como derechos ARCO.
+<br>
+Para el ejercicio de cualquiera de los derechos ARCO, usted deberá presentar la solicitud respectiva a través del siguiente medio:
+<br>
+Llamando a el numero telefonico 52+ 5610721990 ó escribir un correo a yehiibhiidigital@gmail.com
+<br>
+Para conocer el procedimiento y requisitos para el ejercicio de los derechos ARCO, ponemos a su disposición el siguiente medio:
+<br>
+Llamando a el numero telefonico 52+ 5610721990 ó escribir un correo a yehiibhiidigital@gmail.com
+<br>
+Los datos de contacto de la persona o departamento de datos personales, que está a cargo de dar trámite a las solicitudes de derechos ARCO, son los siguientes:
+<br>
+a) Nombre de la persona o departamento de datos personales: Daniel Vallejo Chimal
+b) Domicilio: calle Cda. de las colonias 84, colonia Las Colonias, ciudad Estado de México, municipio o delegación Atizapán de zaoaragoza, c.p. 52953, en la entidad de Estado de México, país México
+c) Correo electrónico: yehiibhiidigital@gmail.com
+d) Número telefónico: 5610731990
+Otro dato de contacto: juanitovenenoed@gmail.com
+<br>
+Usted puede revocar su consentimiento para el uso de sus datos personales
+<br>
+Usted puede revocar el consentimiento que, en su caso, nos haya otorgado para el tratamiento de sus datos personales. Sin embargo, es importante que tenga en cuenta que no en todos los casos podremos atender su solicitud o concluir el uso de forma inmediata, ya que es posible que por alguna obligación legal requiramos seguir tratando sus datos personales. Asimismo, usted deberá considerar que para ciertos fines, la revocación de su consentimiento implicará que no le podamos seguir prestando el servicio que nos solicitó, o la conclusión de su relación con nosotros.
+<br>
+Para revocar su consentimiento deberá presentar su solicitud a través del siguiente medio:
+<br>
+Puede llamarnos al numero 52+ 5610731990 o escribir un correo a yehiibhiidigital@gmail.com
+<br>
+Para conocer el procedimiento y requisitos para la revocación del consentimiento, ponemos a su disposición el siguiente medio:
+<br>
+Escibiendo un correo a yehiibhiidigital@gmail.com
+<br>
+
+¿Cómo puede limitar el uso o divulgación de su información personal?
+<br>
+Con objeto de que usted pueda limitar el uso y divulgación de su información personal, le ofrecemos los siguientes medios:
+<br>
+Nos puede llamar a 52+5610731990 o escribir un correo a yehiibhiidigital@gmail.com
+<br>
+
+
+¿Cómo puede conocer los cambios en este aviso de privacidad?
+<br>
+El presente aviso de privacidad puede sufrir modificaciones, cambios o actualizaciones derivadas de nuevos requerimientos legales; de nuestras propias necesidades por los productos o servicios que ofrecemos; de nuestras prácticas de privacidad; de cambios en nuestro modelo de negocio, o por otras causas.
+<br>
+Nos comprometemos a mantenerlo informado sobre los cambios que pueda sufrir el presente aviso de privacidad, a través de: puede escribir un correo a yehiibhiidigital@gmail.com o llamar al 52+ 5610731990.
+<br>
+El procedimiento a través del cual se llevarán a cabo las notificaciones sobre cambios o actualizaciones al presente aviso de privacidad es el siguiente:
+<br>
+En cuanto recibamos lapeticion en 5 dias habiles se dara la respuesta de cancelación para excluirlo de la lista que se crea para los destinatarios que si desean estar incluidos en la lista de campaña de marketing
+<br>
+Última actualización: 26/01/2023
+
+    </p>
+    <br><br>
+
+       <button id="cancelAviso">Salir!</button>
+     </dialog>
+     <button id="showAviso"><h2 class="text-sm font-medium text-gray-100">Aviso de Privacidad</h2></button>
+      
+
+      <div class="mt-4 space-y-6">
+        <p class="text-sm text-gray-200"> El aviso de privacidad es un documento legal que contiene información sobre cómo un sitio web recopila, usa, almacena y protege la información personal de los usuarios. El aviso de privacidad también explica qué derechos tienen los usuarios con respecto a su información personal y cómo pueden ejercerlos. El aviso de privacidad es una parte importante del cumplimiento de la ley en materia de privacidad y seguridad de datos.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!--<script src="js/scrolling.js"></script>-->
+<script src="js/avisodeprivacidad.js"></script>
+<!--<script src="js/starsBack.js"></script>-->
+
+
+<!--galeri-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Observer.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+<script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+<script src="js/index.js"></script>
+
+<script src="js/btn.js"></script>
+<script src="js/disrupt.js"></script>
+<script src="js/cardsHover.js"></script>
+ <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+
+<!--bubbles-->
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/anime.min.js"></script>
+<script src="js/scrollMonitor.js"></script>
+<script src="js/demo2.js"></script>
+
+<script src="js/btn.js"></script>
+<script src="js/cardsHover.js"></script>
+<!--<script src="js/avisodeprivacidad.js"></script>-->
+        
+        
+            
+            
+  </body>
+</html>

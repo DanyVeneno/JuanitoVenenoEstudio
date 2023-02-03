@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+canvas {
+  width: 100%;
+  height: 100vh;
+  /*border: dashed 2px pink;*/
+  position: absolute;
+  z-index: 10;
+  /*opacity: 0.5;*/
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(#0c0c0c, rgb(26, 26, 26));
+}
+
+@media (max-width: 575.98px) {
+  #info-textos {
+    font-size: 12px;
+    margin-left: 70px;
+    text-align: center;
+    margin-top: 300px;
+  }
+  h4 {
+    font-size: medium;
+    color: rgb(228, 252, 181);
+  }
+  #bideo {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+  }
+}
+
+#media-video {
+  width: 100%;
+  /*border: dashed 2px palevioletred;*/
+}
+@media (max-width: 575.98px) {
+  #media-video {
+    width: 100%;
+  }
+}
+
+#titulo-video {
+  font-size: xx-large;
+}
+#titulo-descripcion-video {
+  font-size: small;
+  text-transform: lowercase;
+}
+
+#principalesProductos {
+  width: 100%;
+  height: 100vh;
+  background-color: #0c0c0c;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /*padding: 100px;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+section::before {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  height: 200px;
+  width: 100%;
+  background: linear-gradient(to top, #0c0c0c, transparent);
+  z-index: 1000;
+  /*border: dashed 2px blue;*/
+}
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section img#world {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  left: 44.5%;
+  top: 190px;
+  z-index: 10;
+}
+
+section img#perspect {
+  z-index: 10;
+}
+#text {
+  position: absolute;
+  right: -650px;
+  white-space: nowrap;
+  font-size: 7.5vw;
+  z-index: 9999;
+  color: rgb(228, 252, 181);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+}
+#text2 {
+  position: absolute;
+  right: -600px;
+  white-space: nowrap;
+  font-size: 7.5vw;
+  z-index: 9999;
+  color: rgb(228, 252, 181);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+}
+#text3 {
+  position: absolute;
+  right: -700px;
+  white-space: nowrap;
+  font-size: 7.5vw;
+  z-index: 9999;
+  color: rgb(228, 252, 181);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+}
+.sectionTwo {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  background-color: #131313;
+  /*border: dashed 1px orange;*/
+}
+
+.sectionTwo h2 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: rgb(228, 252, 181);
+}
+.sectionTwo p {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: rgb(228, 252, 181);
+}
+/*world section*/
+#subtitulo {
+  text-align: left;
+  text-transform: none;
+}

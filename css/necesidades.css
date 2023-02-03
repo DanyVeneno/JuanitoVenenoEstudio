@@ -1,0 +1,17 @@
+#necesidadesSection {
+  background: linear-gradient(300deg, #323232, #636363, #000000, #e9f77b);
+  background-size: 240% 240%;
+  animation: gradient-animation 24s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
