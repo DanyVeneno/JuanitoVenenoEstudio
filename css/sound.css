@@ -37,7 +37,7 @@ p {
   display: flex;
   justify-content: space-between;
   /*border: 2px dashed magenta;*/
-  z-index: 10;
+  z-index: 60;
 }
 
 .audio--container:hover {
@@ -48,10 +48,19 @@ p {
   width: 5px;
   background: rgb(181, 250, 53);
   transition: transform 250ms ease, background 200ms ease;
+  -webkit-transition: transform 250ms ease, background 200ms ease;
+  -moz-transition: transform 250ms ease, background 200ms ease;
+  -ms-transition: transform 250ms ease, background 200ms ease;
+  -o-transition: transform 250ms ease, background 200ms ease;
 }
 
 .audiobar {
-  /*transform:scaleY(0.5);*/
+  /*transform:scaleY(0.5);
+  */
   transform-origin: center;
   border-radius: 100vw;
+  -webkit-border-radius: 100vw;
+  -moz-border-radius: 100vw;
+  -ms-border-radius: 100vw;
+  -o-border-radius: 100vw;
 }
